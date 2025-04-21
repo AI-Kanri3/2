@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>リダイレクトページ</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Noto Sans JP', Arial, sans-serif;
+            background-color: #f8f8f8;
+        }
+        h1 {
+            font-size: 4em;
+            color: #32CD32;
+            text-align: center;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        /* アニメーション: フェードイン */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>リダイレクト中...</h1>
+    <script>
+        setTimeout(function() {
+            window.location.href = "https://example.nl";
+        }, 0);
+    </script>
+</body>
+</html>
